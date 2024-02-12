@@ -54,17 +54,18 @@ function App() {
 
   const projects = [
     {
-      video:
-        "https://player.vimeo.com/video/908328877?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&controls=0&loop=1",
+      // video:
+      //   "https://player.vimeo.com/video/908328877?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&controls=0&loop=1",
+      video: "/mobilecare.mov",
     },
-    {
-      video:
-        "https://player.vimeo.com/video/908328829?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&controls=0&loop=1",
-    },
-    {
-      video:
-        "https://player.vimeo.com/video/908328805?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&controls=0&loop=1",
-    },
+    // {
+    //   video:
+    //     "https://player.vimeo.com/video/908328829?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&controls=0&loop=1",
+    // },
+    // {
+    //   video:
+    //     "https://player.vimeo.com/video/908328805?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&controls=0&loop=1",
+    // },
   ];
 
   return (
@@ -95,15 +96,13 @@ function App() {
         </button>
       </div>
       <div className="video" style={{ width: videorWidth }}>
-        {/* <video          
-          muted
-          autoPlay
-          playsInline
-          loop          
-        >
-          <source src="/mobilecare.mov" type="video/webm" />
-        </video> */}
-        {projects?.map((item, index) => {
+        <video muted autoPlay playsInline loop>
+          <source
+            src="/mobilecare.mov"
+            // type="video/webm"
+          />
+        </video>
+        {/* {projects?.map((item, index) => {
           if (index + 1 === videoStep) {
             return (
               <iframe
@@ -125,7 +124,7 @@ function App() {
               ></iframe>
             );
           }
-        })}
+        })} */}
       </div>
     </div>
   );
