@@ -32,21 +32,21 @@ function VideoPlayerComponent({
   return (
     <>
       {/* {screenSize === "desktop" ? ( */}
-        <video
-          id={id}
-          className={className}
-          muted
-          autoPlay
-          playsInline
-          loop
-          poster={videoPoster}
-        >
-          <source src={videoMov} />
-          <source src={videoWebm} />
-          {/* <source src={videoUrlMp4} type="video/mp4" /> */}
-        </video>
+      <video
+        id={id}
+        className={className}
+        muted
+        autoPlay
+        playsInline
+        loop
+        poster={videoPoster}
+      >
+        <source src={videoWebm} />
+        <source src={videoMov} />
+        {/* <source src={videoUrlMp4} type="video/mp4" /> */}
+      </video>
       {/* // ) : ( */}
-        {/* <div
+      {/* <div
           className={
             id != "background-video" ? "vimeo-wrapper" : "vimeo-wrapper-mobile"
           }
