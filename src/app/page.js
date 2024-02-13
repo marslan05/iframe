@@ -96,7 +96,7 @@ export default function Home() {
             }
           })
         ) : (
-          <div className="min-h-screen flex w-full flex-col justify-center items-center align-middle ">
+          <div className="min-h-svh flex w-full flex-col justify-center items-center align-middle ">
             <p className="text-[#0D0D0D] text-2xl font-medium">No Projects</p>
           </div>
         )}
@@ -105,9 +105,9 @@ export default function Home() {
       {/* mobile videos */}
       <main
         id="parentMain"
-        className="flex main-wrapper show-on-mobile min-h-screen min-w-screen  remove-height flex-col justify-end relative"
+        className="flex main-wrapper show-on-mobile min-h-svh min-w-svw  remove-height flex-col justify-end relative"
       >
-        <div className="show-on-mobile flex flex-col w-full min-w-screen">
+        <div className="show-on-mobile flex flex-col w-full min-w-svw">
           {projects?.length > 0 ? (
             projects?.map((item, index) => {
               return (

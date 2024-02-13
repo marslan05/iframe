@@ -35,14 +35,14 @@ export default function RootLayout({ children }) {
         id="body"
         className="bg-[#0D0D0D] 
       xl:overflow-hidden lg:overflow-hidden overflow-auto 
-      min-h-screen min-w-screen"
+      min-h-svh min-w-svw"
       >
-        <div className="flex change-on-mobile relative align-middle justify-between min-w-screen min-h-screen">
+        <div className="flex change-on-mobile relative align-middle justify-between min-w-svw min-h-svh">
           <Sidemenu />
           {children}
         </div>
 
-        {/* <div className="grid align-middle min-h-screen min-w-screen w-full h-full custom-grid">
+        {/* <div className="grid align-middle min-h-svh min-w-svw w-full h-full custom-grid">
         </div> */}
       </body>
     </html>

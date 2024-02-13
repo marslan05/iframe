@@ -209,7 +209,7 @@ const Footer = () => {
       ) : null}
       <div
         id="div"
-        className={`show-on-mobile fixed bottom-0 left-0 w-full min-w-screen flex-col z-[10000] ${
+        className={`show-on-mobile fixed bottom-0 left-0 w-full min-w-svw flex-col z-[10000] ${
           isScrolledPastDiv ? "hidden" : ""
         } `}
       >

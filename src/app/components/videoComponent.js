@@ -41,8 +41,14 @@ function VideoPlayerComponent({
         loop
         poster={videoPoster}
       >
-        <source src={videoWebm} />
-        <source src={videoMov} />
+        <source
+          src={videoWebm}
+          // type="video/webm"
+        />
+        <source
+          src={videoMov}
+          // type="video/ogg"
+        />
         {/* <source src={videoUrlMp4} type="video/mp4" /> */}
       </video>
       {/* // ) : ( */}
