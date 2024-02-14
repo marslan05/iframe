@@ -55,7 +55,8 @@ export default function Home() {
 
   const handleResize = () => {
     // Get the current width of the div
-    const currentWidth = document.getElementById("video").offsetWidth;
+    const currentWidth = document.getElementById("video").clientWidth();
+    alert("currentWidth ", currentWidth);
     setWidth(currentWidth);
   };
 
