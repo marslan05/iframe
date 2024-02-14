@@ -39,7 +39,8 @@ const DesktopVideo = ({
 
       {/* bottom row */}
       <div
-        className="flex xl:flex-nowrap hide-on-mobile lg:flex-nowrap md:flex-wrap sm:flex-wrap flex-wrap gap-6 align-middle items-center justify-between fixed bottom-0 xl:p-6 xl:pb-8 lg:pb-8 md:pb-8 lg:p-6 md:p-6 sm:p-6 p-6 z-[10000] "
+        id="viewMore"
+        className="flex xl:flex-nowrap hide-on-mobile lg:flex-nowrap md:flex-wrap sm:flex-wrap flex-wrap gap-6 align-middle items-center justify-between fixed bottom-0 xl:p-6 xl:pb-8 lg:pb-8 md:pb-8 lg:p-6 md:p-6 sm:p-6 p-6 z-[10000]  "
         // style={{ width: "-webkit-fill-available" }}
         // style={{ width: `calc(100vw - ${width}px)` }}
         style={{ width: `${width}px` }}

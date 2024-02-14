@@ -55,7 +55,7 @@ export default function Home() {
 
   const handleResize = () => {
     // Get the current width of the div
-    const currentWidth = document.getElementById("video").clientWidth;
+    const currentWidth = document.getElementById("video").offsetWidth;
     alert("currentWidth ", currentWidth);
     setWidth(currentWidth);
   };
@@ -74,7 +74,7 @@ export default function Home() {
 
   return (
     <>
-      <main id="video" className="hide-on-mobile w-auto relative">
+      <main id="video" className="hide-on-mobile min-h-svh w-auto relative">
         {projects?.length > 0 ? (
           projects?.map((item, index) => {
             if (index + 1 === videoStep) {
