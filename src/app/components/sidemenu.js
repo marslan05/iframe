@@ -363,7 +363,7 @@ const Sidemenu = () => {
         // style={{ width: `calc(100vw - ${emailCopyWidth}px)` }}
         className={`text-white ${
           emailCopiesStatus ? "block" : "hidden"
-        } font-[GeneralSansMedium] z-50 text-center text-base font-medium bg-[#5E79FF] py-1 px-3 fixed bottom-0 left-0 cursor-pointer w-full`}
+        } font-[GeneralSansMedium] z-50 text-center text-base font-medium bg-[#5E79FF] py-1 px-3 absolute bottom-[35px] left-0 cursor-pointer w-full`}
       >
         e-mailová adresa bola skopírovaná
       </p>

@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
       <body
         id="body"
         className="bg-[#0D0D0D] 
-      xl:overflow-hidden lg:overflow-hidden overflow-auto 
+      xl:overflow-hidden relative lg:overflow-hidden overflow-auto 
       min-h-svh min-w-svw"
       >
         <div className="flex change-on-mobile relative align-middle justify-between min-w-svw min-h-svh">
