@@ -359,7 +359,7 @@ const Sidemenu = () => {
         </div>
       </div>
       <p
-        style={{ width: `${emailCopyWidth}px)` }}
+        style={{ width: `${emailCopyWidth}px` }}
         // style={{ width: `calc(100vw - ${emailCopyWidth}px)` }}
         className={`text-white ${
           emailCopiesStatus ? "block" : "hidden"
