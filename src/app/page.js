@@ -91,7 +91,7 @@ export default function Home() {
                   tags={item?.tags}
                   description={item?.description}
                   videoUrl={item?.iframeVideo}
-                  videoPoster="/placeholder.svg"
+                  videoPoster="/placeholder.png"
                 />
               );
             }
