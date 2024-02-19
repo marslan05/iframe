@@ -19,6 +19,7 @@ export default function Home() {
         "https://player.vimeo.com/video/908328877?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&controls=0&loop=1",
       description:
         "E-shop s obratom 1,7 mil. € ročne expanduje v roku 2024 do ďalšej krajiny a v tejto súvislosti firma prešla redizajnom, ktorý okrem iného zahŕňa úplne nový dizajn e-shopu a prezentačnej webstránky.",
+      videoPoster: "/mc.png",
       tags: [
         "Vizuálna identita",
         "Font na mieru",
@@ -35,6 +36,7 @@ export default function Home() {
       name: "Cirkev bratská",
       videoWebm: "/cbpo.webm",
       videoMov: "/cbpo.mov",
+      videoPoster: "/cb.png",
       iframeVideo:
         "https://player.vimeo.com/video/908328829?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&controls=0&loop=1",
       description:
@@ -45,6 +47,7 @@ export default function Home() {
       name: "Apartment Holdings",
       videoWebm: "/ah.webm",
       videoMov: "/ah.mov",
+      videoPoster: "/ah.png",
       iframeVideo:
         "https://player.vimeo.com/video/908328805?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&controls=0&loop=1",
       description:
@@ -91,7 +94,7 @@ export default function Home() {
                   tags={item?.tags}
                   description={item?.description}
                   videoUrl={item?.iframeVideo}
-                  videoPoster="/placeholder.png"
+                  videoPoster={item?.videoPoster}
                 />
               );
             }
